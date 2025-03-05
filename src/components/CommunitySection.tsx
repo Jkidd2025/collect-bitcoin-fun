@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MonitorSmartphone, Globe, MessageCircle } from 'lucide-react';
+import { X, Globe, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
   {
     name: 'X',
-    icon: <MonitorSmartphone className="h-6 w-6" />,
+    icon: <X className="h-6 w-6" />,
     url: '#',
     color: 'bg-[#000000]/10 text-[#000000]'
   },
