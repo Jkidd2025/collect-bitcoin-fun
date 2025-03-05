@@ -1,13 +1,61 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import FeatureSection from '../components/FeatureSection';
+import RewardsCounter from '../components/RewardsCounter';
+import CommunitySection from '../components/CommunitySection';
+import FaqSection from '../components/FaqSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  // Effect to handle fade-in sections based on scroll position
+  useEffect(() => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-in-section');
+    fadeElements.forEach(element => observer.observe(element));
+
+    return () => {
+      fadeElements.forEach(element => observer.unobserve(element));
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <AnimatePresence>
+      <div className="min-h-screen bg-crypto-dark text-white overflow-x-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Header />
+          <main>
+            <HeroSection />
+            <FeatureSection />
+            <RewardsCounter />
+            <CommunitySection />
+            <FaqSection />
+          </main>
+          <Footer />
+        </motion.div>
       </div>
-    </div>
+    </AnimatePresence>
   );
 };
 
