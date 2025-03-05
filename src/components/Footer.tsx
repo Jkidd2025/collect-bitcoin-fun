@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bitcoin, X, Globe, MessageCircle, ArrowUp } from 'lucide-react';
+import { Bitcoin, X, ChartBar, MessageCircle, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -51,7 +51,7 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5 text-white" />
               </a>
               <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
-                <Globe className="h-5 w-5 text-white" />
+                <ChartBar className="h-5 w-5 text-white" />
               </a>
             </div>
           </div>
