@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { X, ChartBar, MessageCircle } from 'lucide-react';
+import { X, BarChart3, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     name: 'Dex Screen',
-    icon: <ChartBar className="h-6 w-6" />,
+    icon: <BarChart3 className="h-6 w-6" />,
     url: '#',
     color: 'bg-white/10 text-white'
   }
