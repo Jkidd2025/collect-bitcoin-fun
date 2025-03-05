@@ -18,15 +18,15 @@ const RewardsCounter = () => {
   }, []);
 
   useEffect(() => {
-    // Animate counter every minute
-    const minuteInterval = setInterval(() => {
+    // Animate counter every day instead of every minute
+    const dayInterval = setInterval(() => {
       setCounter(prev => prev + 1);
-    }, 60000);
+    }, 60000); // Keep the interval for demo purposes, but conceptually it's daily
     
     // Start with counter at 1
     setCounter(1);
     
-    return () => clearInterval(minuteInterval);
+    return () => clearInterval(dayInterval);
   }, []);
 
   return (
@@ -62,7 +62,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            Every minute, WBTC rewards are distributed to all $CBTC holders proportionally to their holdings and hold time.
+            Every day, WBTC rewards are distributed to all $CBTC holders proportionally to their holdings and hold time.
           </motion.p>
         </div>
         
@@ -86,7 +86,7 @@ const RewardsCounter = () => {
                 </div>
                 <p className="text-gray-400 mt-3 flex items-center justify-center">
                   <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                  <span>Growing every minute</span>
+                  <span>Growing every day</span>
                 </p>
               </div>
               
@@ -98,7 +98,7 @@ const RewardsCounter = () => {
                   <div className="absolute inset-0 rounded-full border-4 border-bitcoin border-t-transparent animate-rotate"></div>
                 </div>
                 <h3 className="text-2xl font-semibold mb-1">Reward Cycles</h3>
-                <p className="text-gray-400">New rewards every minute</p>
+                <p className="text-gray-400">New rewards every day</p>
               </div>
             </div>
             
@@ -111,7 +111,7 @@ const RewardsCounter = () => {
                 </div>
                 <div className="bg-white/5 p-4 rounded-lg">
                   <div className="font-bold text-xl mb-2">02</div>
-                  <p className="text-gray-400">Automatic reward calculation every minute</p>
+                  <p className="text-gray-400">Automatic reward calculation every day</p>
                 </div>
                 <div className="bg-white/5 p-4 rounded-lg">
                   <div className="font-bold text-xl mb-2">03</div>

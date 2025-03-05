@@ -32,8 +32,8 @@ const FeatureSection = () => {
   const features = [
     {
       icon: <Clock className="w-6 h-6 text-bitcoin" />,
-      title: "WBTC Rewards Every Minute",
-      description: "Automatically receive WBTC rewards directly to your wallet every minute, just for holding $CBTC tokens."
+      title: "WBTC Rewards Every Day",
+      description: "Automatically receive WBTC rewards directly to your wallet every day, just for holding $CBTC tokens."
     },
     {
       icon: <Wallet className="w-6 h-6 text-bitcoin" />,
