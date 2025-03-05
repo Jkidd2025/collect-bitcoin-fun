@@ -170,8 +170,8 @@ const TokenomicsSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="glass-card p-6 border-l-4 border-bitcoin">
-              <h4 className="text-lg font-semibold mb-3">50% to Holders</h4>
-              <p className="text-gray-400">Distributed as reflections among all token holders, rewarding long-term holding.</p>
+              <h4 className="text-lg font-semibold mb-3">50% to Holders as $WBTC</h4>
+              <p className="text-gray-400">Distributed as $WBTC reflections among all token holders, rewarding long-term holding with real Bitcoin value.</p>
             </div>
             
             <div className="glass-card p-6 border-l-4 border-accent">
