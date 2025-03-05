@@ -1,15 +1,15 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Globe, MessageCircle } from 'lucide-react';
+import { MonitorSmartphone, Globe, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
   {
-    name: 'Twitter',
-    icon: <Twitter className="h-6 w-6" />,
+    name: 'X',
+    icon: <MonitorSmartphone className="h-6 w-6" />,
     url: '#',
-    color: 'bg-[#1DA1F2]/10 text-[#1DA1F2]'
+    color: 'bg-[#000000]/10 text-[#000000]'
   },
   {
     name: 'Telegram',
@@ -18,7 +18,7 @@ const socialLinks = [
     color: 'bg-[#0088cc]/10 text-[#0088cc]'
   },
   {
-    name: 'Website',
+    name: 'Dex Screen',
     icon: <Globe className="h-6 w-6" />,
     url: '#',
     color: 'bg-white/10 text-white'
