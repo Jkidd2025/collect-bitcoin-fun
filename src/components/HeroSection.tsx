@@ -101,7 +101,7 @@ const HeroSection = () => {
             Buy $CBTC
           </Button>
           <Button variant="outline" className="btn-secondary">
-            Read Whitepaper
+            Road Map
           </Button>
         </motion.div>
 

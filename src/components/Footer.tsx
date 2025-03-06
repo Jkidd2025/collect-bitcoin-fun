@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Bitcoin, X, BarChart3, MessageCircle, ArrowUp } from 'lucide-react';
@@ -75,7 +76,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Important</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-bitcoin transition-colors">Whitepaper</a></li>
+              <li><a href="#" className="hover:text-bitcoin transition-colors">Road Map</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Privacy Policy</a></li>
