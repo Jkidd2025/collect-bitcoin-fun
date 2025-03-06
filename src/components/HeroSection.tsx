@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Bitcoin } from 'lucide-react';
@@ -27,6 +26,10 @@ const HeroSection = () => {
     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToRoadmap = () => {
+    document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section 
       id="home" 
@@ -35,7 +38,6 @@ const HeroSection = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-b from-crypto-dark/80 via-crypto-dark to-crypto-dark pointer-events-none"></div>
       
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(5)].map((_, i) => (
           <motion.div
@@ -100,7 +102,7 @@ const HeroSection = () => {
           <Button className="btn-primary">
             Buy $CBTC
           </Button>
-          <Button variant="outline" className="btn-secondary">
+          <Button variant="outline" className="btn-secondary" onClick={scrollToRoadmap}>
             Road Map
           </Button>
         </motion.div>

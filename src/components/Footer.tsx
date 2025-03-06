@@ -60,7 +60,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-400">
-              {['Home', 'Features', 'Rewards', 'Community', 'FAQ'].map((item) => (
+              {['Home', 'Features', 'Rewards', 'Roadmap', 'Community', 'FAQ'].map((item) => (
                 <li key={item}>
                   <a 
                     href={`#${item.toLowerCase()}`}
@@ -76,7 +76,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Important</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-bitcoin transition-colors">Road Map</a></li>
+              <li><a href="#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Privacy Policy</a></li>

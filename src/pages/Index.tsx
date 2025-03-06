@@ -7,6 +7,7 @@ import HeroSection from '../components/HeroSection';
 import FeatureSection from '../components/FeatureSection';
 import TokenomicsSection from '../components/TokenomicsSection';
 import RewardsCounter from '../components/RewardsCounter';
+import RoadMapSection from '../components/RoadMapSection';
 import CommunitySection from '../components/CommunitySection';
 import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
@@ -51,6 +52,7 @@ const Index = () => {
             <FeatureSection />
             <TokenomicsSection />
             <RewardsCounter />
+            <RoadMapSection />
             <CommunitySection />
             <FaqSection />
           </main>
