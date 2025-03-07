@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -108,9 +107,14 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Collect Bitcoin. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">$CBTC is not affiliated with Bitcoin or any specific entity.</p>
+        <div className="border-t border-white/10 pt-8 flex flex-col justify-between items-center text-gray-500 text-sm">
+          <p className="text-center mb-4 px-4 max-w-4xl mx-auto">
+            Collect Bitcoin is designed as an expression of support and engagement with the values represented by the symbol "$CBTC" and its accompanying artwork. It is not intended to serve as, or be interpreted as, an investment opportunity, investment contract, or security of any kind. mycollectbitcoin.com is non-political and is not affiliated with any political campaign, office, or governmental agency.
+          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center w-full">
+            <p>© {new Date().getFullYear()} Collect Bitcoin. All rights reserved.</p>
+            <p className="mt-2 md:mt-0">$CBTC is not affiliated with Bitcoin or any specific entity.</p>
+          </div>
         </div>
       </div>
     </footer>
