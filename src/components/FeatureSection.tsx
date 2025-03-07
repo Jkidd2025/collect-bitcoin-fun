@@ -75,7 +75,7 @@ const FeatureSection = () => {
             viewport={{ once: true }}
             className="heading-lg mb-4"
           >
-            Why <span className="text-gradient">Collect Bitcoin</span>?
+            Why <span className="text-gradient">Collect Bitcoin Smart Contract</span>?
           </motion.h2>
           
           <motion.p 
