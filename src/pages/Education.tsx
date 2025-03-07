@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BitcoinBasics from '../components/BitcoinBasics';
 import CryptoBestPractices from '../components/CryptoBestPractices';
+import BlockchainsContent from '../components/BlockchainsContent';
 import EducationResourceCard from '../components/EducationResourceCard';
 
 // Animation variants
@@ -37,7 +38,7 @@ const educationResources = [
     icon: <Code className="h-10 w-10 text-bitcoin" />,
     title: 'Blockchains',
     description: 'Explore the technology behind cryptocurrencies and decentralized applications.',
-    link: '#',
+    link: '#blockchains',
   },
   {
     icon: <Video className="h-10 w-10 text-bitcoin" />,
@@ -118,6 +119,17 @@ const Education = () => {
               className="mt-24 max-w-4xl mx-auto"
             >
               <CryptoBestPractices />
+            </motion.div>
+
+            {/* Blockchains Section */}
+            <motion.div
+              id="blockchains"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="mt-24 max-w-4xl mx-auto"
+            >
+              <BlockchainsContent />
             </motion.div>
 
             <motion.div 
