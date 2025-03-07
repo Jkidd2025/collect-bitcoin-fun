@@ -9,6 +9,16 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Define quick links that match actual section IDs
+  const quickLinks = [
+    { name: 'Home', href: '#' },  // Home is the root, so just # works
+    { name: 'Features', href: '#features' },
+    { name: 'Rewards', href: '#rewards' },
+    { name: 'Roadmap', href: '#roadmap' },
+    { name: 'Community', href: '#community' },
+    { name: 'FAQ', href: '#faq' }
+  ];
+
   return (
     <footer className="bg-crypto-dark relative overflow-hidden pt-16 pb-8">
       <div className="absolute inset-0 grid-pattern opacity-10"></div>
@@ -61,13 +71,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-400">
-              {['Home', 'Features', 'Rewards', 'Roadmap', 'Community', 'FAQ'].map((item) => (
-                <li key={item}>
+              {quickLinks.map((link) => (
+                <li key={link.name}>
                   <a 
-                    href={`#${item.toLowerCase()}`}
+                    href={link.href}
                     className="hover:text-bitcoin transition-colors"
                   >
-                    {item}
+                    {link.name}
                   </a>
                 </li>
               ))}
