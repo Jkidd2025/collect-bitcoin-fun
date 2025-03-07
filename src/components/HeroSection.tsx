@@ -87,7 +87,7 @@ const HeroSection = () => {
           </span>
           <h1 className="heading-xl mb-4 max-w-4xl mx-auto">
             <span className="text-gradient">Collect Bitcoin</span>
-            <br /> Rewarded with WBTC
+            <br /> Rewards with WBTC
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             The first memecoin on Solana that rewards holders with WBTC just for holding. No staking, no complications - pure passive income.
