@@ -44,9 +44,9 @@ const educationResources = [
     link: '#',
   },
   {
-    icon: <Brain className="h-10 w-10 text-bitcoin" />,
-    title: 'Technical Analysis',
-    description: 'Master chart patterns and indicators for better trading decisions.',
+    icon: <Code className="h-10 w-10 text-bitcoin" />,
+    title: 'Blockchain & Smart Contracts',
+    description: 'Explore the technology behind cryptocurrencies and decentralized applications.',
     link: '#',
   },
   {
