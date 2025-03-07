@@ -9,12 +9,12 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Define quick links that match actual section IDs
+  // Define quick links with updated education path
   const quickLinks = [
-    { name: 'Home', href: '/' },  // Changed to root path for React Router
+    { name: 'Home', href: '/' },
     { name: 'Features', href: '/#features' },
     { name: 'Rewards', href: '/#rewards' },
-    { name: 'Education', href: '/#education' },
+    { name: 'Education', href: '/education' },
     { name: 'Community', href: '/#community' },
     { name: 'FAQ', href: '/#faq' }
   ];
@@ -75,20 +75,20 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  {link.name === 'Home' ? (
-                    <Link 
-                      to={link.href}
-                      className="hover:text-bitcoin transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  ) : (
+                  {link.href.startsWith('/#') ? (
                     <a 
                       href={link.href}
                       className="hover:text-bitcoin transition-colors"
                     >
                       {link.name}
                     </a>
+                  ) : (
+                    <Link 
+                      to={link.href}
+                      className="hover:text-bitcoin transition-colors"
+                    >
+                      {link.name}
+                    </Link>
                   )}
                 </li>
               ))}
@@ -100,7 +100,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="/#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
               <li><a href="/#tokenomics" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
-              <li><a href="/#education" className="hover:text-bitcoin transition-colors">Education Center</a></li>
+              <li><Link to="/education" className="hover:text-bitcoin transition-colors">Education Center</Link></li>
               <li><a href="https://solscan.io/token/CBTCVYcZWGeBSN3bolkXthwHxnKHMXGgmz6FycsPDYRw" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><Link to="/privacy-policy" className="hover:text-bitcoin transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="hover:text-bitcoin transition-colors">Terms of Service</Link></li>

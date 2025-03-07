@@ -8,7 +8,6 @@ import FeatureSection from '../components/FeatureSection';
 import TokenomicsSection from '../components/TokenomicsSection';
 import RewardsCounter from '../components/RewardsCounter';
 import RoadMapSection from '../components/RoadMapSection';
-import EducationSection from '../components/EducationSection';
 import CommunitySection from '../components/CommunitySection';
 import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
@@ -54,7 +53,6 @@ const Index = () => {
             <TokenomicsSection />
             <RewardsCounter />
             <RoadMapSection />
-            <EducationSection />
             <CommunitySection />
             <FaqSection />
           </main>

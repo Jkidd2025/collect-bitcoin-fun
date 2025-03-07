@@ -20,8 +20,14 @@ const Header = () => {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  // Navigation items including the new Education section
-  const navItems = ['Features', 'Rewards', 'Education', 'Community', 'FAQ'];
+  // Navigation items with updated education link
+  const navItems = [
+    { name: 'Features', path: '/#features' },
+    { name: 'Rewards', path: '/#rewards' },
+    { name: 'Education', path: '/education' },
+    { name: 'Community', path: '/#community' },
+    { name: 'FAQ', path: '/#faq' }
+  ];
 
   return (
     <header 
@@ -50,16 +56,28 @@ const Header = () => {
             Home
           </Link>
           {navItems.map((item, i) => (
-            <motion.a
-              key={item}
+            <motion.div
+              key={item.name}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 * i }}
-              href={`/#${item.toLowerCase()}`}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
-              {item}
-            </motion.a>
+              {item.path.startsWith('/') ? (
+                <Link 
+                  to={item.path}
+                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a 
+                  href={item.path}
+                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                >
+                  {item.name}
+                </a>
+              )}
+            </motion.div>
           ))}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -100,14 +118,25 @@ const Header = () => {
               Home
             </Link>
             {navItems.map((item) => (
-              <a
-                key={item}
-                href={`/#${item.toLowerCase()}`}
-                className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item}
-              </a>
+              <div key={item.name}>
+                {item.path.startsWith('/') ? (
+                  <Link 
+                    to={item.path}
+                    className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    href={item.path}
+                    className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )}
+              </div>
             ))}
             <Button className="btn-primary w-full">
               Buy $CBTC
