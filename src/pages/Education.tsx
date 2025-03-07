@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Lightbulb, Book, Code, FileCode } from 'lucide-react';
+import { GraduationCap, Lightbulb, Book, Code, FileCode, Coins } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,6 +9,7 @@ import BitcoinBasics from '../components/BitcoinBasics';
 import CryptoBestPractices from '../components/CryptoBestPractices';
 import BlockchainsContent from '../components/BlockchainsContent';
 import SmartContractsContent from '../components/SmartContractsContent';
+import TokenomicsContent from '../components/TokenomicsContent';
 import EducationResourceCard from '../components/EducationResourceCard';
 
 // Animation variants
@@ -46,6 +47,12 @@ const educationResources = [
     title: 'Smart Contracts',
     description: 'Discover how programmable agreements are revolutionizing digital transactions.',
     link: '#smart-contracts',
+  },
+  {
+    icon: <Coins className="h-10 w-10 text-bitcoin" />,
+    title: 'Tokenomics',
+    description: 'Understand the economic principles that govern cryptocurrency ecosystems.',
+    link: '#tokenomics',
   },
 ];
 
@@ -89,7 +96,7 @@ const Education = () => {
             </div>
 
             <motion.div 
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
@@ -147,6 +154,17 @@ const Education = () => {
               className="mt-24 max-w-4xl mx-auto"
             >
               <SmartContractsContent />
+            </motion.div>
+
+            {/* Tokenomics Section */}
+            <motion.div
+              id="tokenomics"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-24 max-w-4xl mx-auto"
+            >
+              <TokenomicsContent />
             </motion.div>
 
             <motion.div 
