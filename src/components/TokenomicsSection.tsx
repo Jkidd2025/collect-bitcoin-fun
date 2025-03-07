@@ -154,7 +154,7 @@ const TokenomicsSection = () => {
           viewport={{ once: true }}
           className="glass-card p-8 mt-12"
         >
-          <h3 className="text-2xl font-semibold mb-6 text-center">Transaction Fee Structure</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-center">Solana Blockchain Service Fee</h3>
           
           <div className="bg-white/5 p-6 rounded-xl mb-8">
             <div className="flex items-center justify-center mb-6">
