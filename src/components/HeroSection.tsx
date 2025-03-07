@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Bitcoin } from 'lucide-react';
@@ -90,7 +89,7 @@ const HeroSection = () => {
             <br /> Rewards with WBTC
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            The first memecoin on Solana that rewards holders with WBTC just for holding. No staking, no complications - pure passive income.
+            A Solana Smart Contract that rewards users for interacting with the Solana Blockchain. No staking, no complications - pure rewards
           </p>
         </motion.div>
 
