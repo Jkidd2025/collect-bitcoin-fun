@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -81,7 +80,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
               <li><a href="#" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><Link to="/privacy-policy" className="hover:text-bitcoin transition-colors">Privacy Policy</Link></li>
-              <li><a href="#" className="hover:text-bitcoin transition-colors">Terms of Service</a></li>
+              <li><Link to="/terms-of-service" className="hover:text-bitcoin transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
