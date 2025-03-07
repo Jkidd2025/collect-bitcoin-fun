@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Bitcoin } from 'lucide-react';
@@ -86,7 +87,7 @@ const HeroSection = () => {
           </span>
           <h1 className="heading-xl mb-4 max-w-4xl mx-auto">
             <span className="text-gradient">Collect Bitcoin</span>
-            <br /> Earn WBTC
+            <br /> Rewarded with WBTC
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             The first memecoin on Solana that rewards holders with WBTC just for holding. No staking, no complications - pure passive income.
