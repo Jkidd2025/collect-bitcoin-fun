@@ -44,7 +44,7 @@ const FaqSection = () => {
   const faqs = [
     {
       question: "What is Collect Bitcoin ($CBTC)?",
-      answer: "Collect Bitcoin ($CBTC) is the first memecoin on the Solana blockchain that automatically rewards holders with WBTC (Wrapped Bitcoin), simply for holding the token. No staking or complicated processes required."
+      answer: "Collect Bitcoin ($CBTC) is a smart contract on the Solana blockchain that automatically rewards holders with WBTC (Wrapped Bitcoin), simply for holding the token. No staking or complicated processes required."
     },
     {
       question: "How do I earn WBTC rewards?",
