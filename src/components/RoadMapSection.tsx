@@ -20,7 +20,7 @@ const roadmapSteps = [
   {
     title: "Launch",
     icon: <Rocket className="h-8 w-8 text-bitcoin" />,
-    description: "Official release of the smart contract onto the Solana mainnet enabled across major DEXes for user to interact $CBTC.",
+    description: "Official release of the smart contract onto the Solana mainnet enabled across major DEXes for user to interact with $CBTC.",
     completed: false
   },
   {
