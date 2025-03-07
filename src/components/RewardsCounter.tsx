@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Bitcoin, TrendingUp } from 'lucide-react';
@@ -62,7 +61,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            Every day, WBTC rewards are distributed to all $CBTC holders proportionally to their holdings and hold time.
+            WBTC rewards are distributed to all $CBTC holders proportionally to their holdings and hold time.
           </motion.p>
         </div>
         
