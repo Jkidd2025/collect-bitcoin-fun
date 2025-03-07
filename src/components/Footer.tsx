@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -51,7 +52,7 @@ const Footer = () => {
               <a href="https://t.me/collect_btc_chat" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <MessageCircle className="h-5 w-5 text-white" />
               </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
+              <a href="https://dexscreener.com/solana/cbtc" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <BarChart3 className="h-5 w-5 text-white" />
               </a>
             </div>
@@ -77,8 +78,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Important</h3>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
-              <li><a href="#" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
-              <li><a href="#" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
+              <li><a href="#tokenomics" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
+              <li><a href="https://solscan.io/token/CBTCVYcZWGeBSN3bolkXthwHxnKHMXGgmz6FycsPDYRw" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><Link to="/privacy-policy" className="hover:text-bitcoin transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="hover:text-bitcoin transition-colors">Terms of Service</Link></li>
             </ul>
