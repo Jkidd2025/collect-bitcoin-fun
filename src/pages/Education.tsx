@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Lightbulb, Book, Video, Code } from 'lucide-react';
+import { GraduationCap, Lightbulb, Book, Code, FileCode } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -41,10 +41,10 @@ const educationResources = [
     link: '#blockchains',
   },
   {
-    icon: <Video className="h-10 w-10 text-bitcoin" />,
-    title: 'Video Tutorials',
-    description: 'Watch step-by-step guides on wallet setup, security, and trading.',
-    link: '#',
+    icon: <FileCode className="h-10 w-10 text-bitcoin" />,
+    title: 'Smart Contracts',
+    description: 'Discover how programmable agreements are revolutionizing digital transactions.',
+    link: '#smart-contracts',
   },
 ];
 
