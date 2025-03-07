@@ -198,7 +198,7 @@ const TokenomicsSection = () => {
             </div>
             <div className="bg-white/5 p-4 rounded-lg">
               <div className="font-bold text-xl mb-2">02</div>
-              <p className="text-gray-400">Automatic reward calculation every day</p>
+              <p className="text-gray-400">Automatic reward calculation</p>
             </div>
             <div className="bg-white/5 p-4 rounded-lg">
               <div className="font-bold text-xl mb-2">03</div>
