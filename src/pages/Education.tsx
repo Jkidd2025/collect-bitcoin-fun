@@ -35,7 +35,7 @@ const educationResources = [
   },
   {
     icon: <Code className="h-10 w-10 text-bitcoin" />,
-    title: 'Blockchain & Smart Contracts',
+    title: 'Blockchains',
     description: 'Explore the technology behind cryptocurrencies and decentralized applications.',
     link: '#',
   },
