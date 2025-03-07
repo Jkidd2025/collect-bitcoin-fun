@@ -11,12 +11,12 @@ const Footer = () => {
 
   // Define quick links that match actual section IDs
   const quickLinks = [
-    { name: 'Home', href: '#' },  // Home is the root, so just # works
-    { name: 'Features', href: '#features' },
-    { name: 'Rewards', href: '#rewards' },
-    { name: 'Roadmap', href: '#roadmap' },
-    { name: 'Community', href: '#community' },
-    { name: 'FAQ', href: '#faq' }
+    { name: 'Home', href: '/' },  // Changed to root path for React Router
+    { name: 'Features', href: '/#features' },
+    { name: 'Rewards', href: '/#rewards' },
+    { name: 'Roadmap', href: '/#roadmap' },
+    { name: 'Community', href: '/#community' },
+    { name: 'FAQ', href: '/#faq' }
   ];
 
   return (
@@ -32,8 +32,10 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 mb-6 md:mb-0"
           >
-            <Bitcoin className="h-8 w-8 text-bitcoin" />
-            <span className="text-xl font-bold tracking-tight">Collect<span className="text-bitcoin">Bitcoin</span></span>
+            <Link to="/" className="flex items-center gap-2">
+              <Bitcoin className="h-8 w-8 text-bitcoin" />
+              <span className="text-xl font-bold tracking-tight">Collect<span className="text-bitcoin">Bitcoin</span></span>
+            </Link>
           </motion.div>
           
           <motion.button
@@ -73,12 +75,21 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href}
-                    className="hover:text-bitcoin transition-colors"
-                  >
-                    {link.name}
-                  </a>
+                  {link.name === 'Home' ? (
+                    <Link 
+                      to={link.href}
+                      className="hover:text-bitcoin transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={link.href}
+                      className="hover:text-bitcoin transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -87,8 +98,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Important</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
-              <li><a href="#tokenomics" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
+              <li><a href="/#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
+              <li><a href="/#tokenomics" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
               <li><a href="https://solscan.io/token/CBTCVYcZWGeBSN3bolkXthwHxnKHMXGgmz6FycsPDYRw" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><Link to="/privacy-policy" className="hover:text-bitcoin transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="hover:text-bitcoin transition-colors">Terms of Service</Link></li>

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Bitcoin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,19 +35,24 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <Bitcoin className="h-8 w-8 text-bitcoin" />
-          <span className="text-xl font-bold tracking-tight">Collect<span className="text-bitcoin">Bitcoin</span></span>
+          <Link to="/" className="flex items-center gap-2">
+            <Bitcoin className="h-8 w-8 text-bitcoin" />
+            <span className="text-xl font-bold tracking-tight">Collect<span className="text-bitcoin">Bitcoin</span></span>
+          </Link>
         </motion.div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 items-center">
-          {['Home', 'Features', 'Rewards', 'Community', 'FAQ'].map((item, i) => (
+          <Link to="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+            Home
+          </Link>
+          {['Features', 'Rewards', 'Community', 'FAQ'].map((item, i) => (
             <motion.a
               key={item}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 * i }}
-              href={`#${item.toLowerCase()}`}
+              href={`/#${item.toLowerCase()}`}
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
               {item}
@@ -83,10 +89,17 @@ const Header = () => {
           className="md:hidden bg-crypto-dark/95 backdrop-blur-lg"
         >
           <div className="container mx-auto px-4 py-6 flex flex-col gap-6">
-            {['Home', 'Features', 'Rewards', 'Community', 'FAQ'].map((item) => (
+            <Link 
+              to="/"
+              className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            {['Features', 'Rewards', 'Community', 'FAQ'].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/#${item.toLowerCase()}`}
                 className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
