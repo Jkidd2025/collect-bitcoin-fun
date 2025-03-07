@@ -52,7 +52,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="heading-lg mb-4"
           >
-            <span className="text-gradient">Bitcoin Rewards</span>
+            <span className="text-gradient"></span>
           </motion.h2>
           
           <motion.p 
