@@ -48,7 +48,7 @@ const FeatureSection = () => {
     {
       icon: <Trophy className="w-6 h-6 text-bitcoin" />,
       title: "Passive Rewards Smart Contract",
-      description: "Simply buy and hold. No additional steps required to start earning Bitcoin rewards."
+      description: "Simply swap and hold. No additional steps are required to be rewarded with WBTC."
     }
   ];
 
