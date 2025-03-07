@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Wallet, Coins, Percent, PieChart, Users, BarChart3, Briefcase } from 'lucide-react';
@@ -162,7 +163,7 @@ const TokenomicsSection = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-xl font-bold">5% Service Fee on Every Swap</h4>
-                <p className="text-gray-400">Applied on all buy, sell, and transfer operations</p>
+                <p className="text-gray-400">Applied on all swaps and transfer operations</p>
               </div>
             </div>
           </div>
