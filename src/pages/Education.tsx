@@ -39,8 +39,8 @@ const educationResources = [
   },
   {
     icon: <Lightbulb className="h-10 w-10 text-bitcoin" />,
-    title: 'Crypto Investing',
-    description: 'Understand strategies for responsible investing in cryptocurrency markets.',
+    title: 'Crypto Best Practices',
+    description: 'Learn essential security and usage guidelines for cryptocurrency.',
     link: '#',
   },
   {
