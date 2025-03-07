@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Wallet, Coins, Percent, PieChart, Users, BarChart3, Briefcase } from 'lucide-react';
@@ -176,7 +175,7 @@ const TokenomicsSection = () => {
             
             <div className="glass-card p-6 border-l-4 border-accent">
               <h4 className="text-lg font-semibold mb-3">50% to Liquidity</h4>
-              <p className="text-gray-400">Added back into the liquidity pool, paired with the native token, to enhance liquidity and minimize price slippage.</p>
+              <p className="text-gray-400">Added back into the liquidity pool, paired with the native token, to enhance network stability and smart contract operations.</p>
             </div>
           </div>
           
