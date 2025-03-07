@@ -20,7 +20,7 @@ const roadmapSteps = [
   {
     title: "Launch",
     icon: <Rocket className="h-8 w-8 text-bitcoin" />,
-    description: "Official market debut with liquidity pool creation and trading enabled across major DEXes.",
+    description: "Official release of the smart contract onto the Solana mainnet enabled across major DEXes for user to interact $CBTC.",
     completed: false
   },
   {
