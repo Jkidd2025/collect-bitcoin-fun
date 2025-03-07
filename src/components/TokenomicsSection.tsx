@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Wallet, Coins, Percent, PieChart, Users, BarChart3, Briefcase } from 'lucide-react';
@@ -162,7 +161,7 @@ const TokenomicsSection = () => {
                 <Percent className="w-8 h-8 text-bitcoin" />
               </div>
               <div className="ml-4">
-                <h4 className="text-xl font-bold">5% Fee on Every Transaction</h4>
+                <h4 className="text-xl font-bold">5% Service Fee on Every Swap</h4>
                 <p className="text-gray-400">Applied on all buy, sell, and transfer operations</p>
               </div>
             </div>
