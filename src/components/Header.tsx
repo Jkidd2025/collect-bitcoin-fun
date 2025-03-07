@@ -20,6 +20,9 @@ const Header = () => {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
+  // Navigation items including the new Education section
+  const navItems = ['Features', 'Rewards', 'Education', 'Community', 'FAQ'];
+
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -46,7 +49,7 @@ const Header = () => {
           <Link to="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
             Home
           </Link>
-          {['Features', 'Rewards', 'Community', 'FAQ'].map((item, i) => (
+          {navItems.map((item, i) => (
             <motion.a
               key={item}
               initial={{ opacity: 0, y: -10 }}
@@ -96,7 +99,7 @@ const Header = () => {
             >
               Home
             </Link>
-            {['Features', 'Rewards', 'Community', 'FAQ'].map((item) => (
+            {navItems.map((item) => (
               <a
                 key={item}
                 href={`/#${item.toLowerCase()}`}

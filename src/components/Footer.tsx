@@ -14,7 +14,7 @@ const Footer = () => {
     { name: 'Home', href: '/' },  // Changed to root path for React Router
     { name: 'Features', href: '/#features' },
     { name: 'Rewards', href: '/#rewards' },
-    { name: 'Roadmap', href: '/#roadmap' },
+    { name: 'Education', href: '/#education' },
     { name: 'Community', href: '/#community' },
     { name: 'FAQ', href: '/#faq' }
   ];
@@ -100,6 +100,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="/#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
               <li><a href="/#tokenomics" className="hover:text-bitcoin transition-colors">Tokenomics</a></li>
+              <li><a href="/#education" className="hover:text-bitcoin transition-colors">Education Center</a></li>
               <li><a href="https://solscan.io/token/CBTCVYcZWGeBSN3bolkXthwHxnKHMXGgmz6FycsPDYRw" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><Link to="/privacy-policy" className="hover:text-bitcoin transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="hover:text-bitcoin transition-colors">Terms of Service</Link></li>
