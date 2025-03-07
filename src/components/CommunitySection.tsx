@@ -8,7 +8,7 @@ const socialLinks = [
   {
     name: 'X',
     icon: <X className="h-6 w-6" />,
-    url: '#',
+    url: 'https://x.com/cbtconsol?s=21',
     color: 'bg-[#000000]/10 text-[#000000]'
   },
   {

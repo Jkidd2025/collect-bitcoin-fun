@@ -45,7 +45,7 @@ const Footer = () => {
               Collect Bitcoin ($CBTC) is the first memecoin on Solana that rewards holders with WBTC.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
+              <a href="https://x.com/cbtconsol?s=21" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <X className="h-5 w-5 text-white" />
               </a>
               <a href="https://t.me/collect_btc_chat" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
