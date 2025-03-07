@@ -14,7 +14,7 @@ const socialLinks = [
   {
     name: 'Telegram',
     icon: <MessageCircle className="h-6 w-6" />,
-    url: 'https://t.me/',
+    url: 'https://t.me/collect_btc_chat',
     color: 'bg-[#0088cc]/10 text-[#0088cc]'
   },
   {

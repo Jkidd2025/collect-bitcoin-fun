@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <X className="h-5 w-5 text-white" />
               </a>
-              <a href="https://t.me/" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
+              <a href="https://t.me/collect_btc_chat" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <MessageCircle className="h-5 w-5 text-white" />
               </a>
               <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
