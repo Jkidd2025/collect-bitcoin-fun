@@ -56,7 +56,7 @@ const FaqSection = () => {
     },
     {
       question: "How are the WBTC rewards funded?",
-      answer: "A portion of each transaction fee is allocated to the WBTC rewards pool. This creates a sustainable reward mechanism that benefits all holders while encouraging long-term holding."
+      answer: "A portion of each service fee is allocated to the WBTC rewards pool. This creates a sustainable reward mechanism that benefits all holders while encouraging long-term holding."
     },
     {
       question: "Where can I buy $CBTC?",
