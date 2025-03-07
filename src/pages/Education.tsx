@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import BitcoinBasics from '../components/BitcoinBasics';
 import CryptoBestPractices from '../components/CryptoBestPractices';
 import BlockchainsContent from '../components/BlockchainsContent';
+import SmartContractsContent from '../components/SmartContractsContent';
 import EducationResourceCard from '../components/EducationResourceCard';
 
 // Animation variants
@@ -130,6 +131,17 @@ const Education = () => {
               className="mt-24 max-w-4xl mx-auto"
             >
               <BlockchainsContent />
+            </motion.div>
+
+            {/* Smart Contracts Section */}
+            <motion.div
+              id="smart-contracts"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="mt-24 max-w-4xl mx-auto"
+            >
+              <SmartContractsContent />
             </motion.div>
 
             <motion.div 
