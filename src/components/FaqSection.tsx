@@ -59,7 +59,7 @@ const FaqSection = () => {
       answer: "A portion of each service fee is allocated to the WBTC rewards pool. This creates a sustainable reward mechanism that benefits all holders while encouraging long-term holding."
     },
     {
-      question: "Where can I buy $CBTC?",
+      question: "Where can I swap for $CBTC?",
       answer: "Currently, $CBTC is available on decentralized exchanges on the Solana network. Connect your wallet and swap SOL or USDC for $CBTC. Check our website for the official contract address."
     },
     {
