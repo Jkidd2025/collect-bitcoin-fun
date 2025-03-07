@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Bitcoin, TrendingUp } from 'lucide-react';
@@ -98,24 +99,6 @@ const RewardsCounter = () => {
                 </div>
                 <h3 className="text-2xl font-semibold mb-1">Reward Cycles</h3>
                 <p className="text-gray-400">New rewards every day</p>
-              </div>
-            </div>
-            
-            <div className="mt-10 pt-6 border-t border-white/10">
-              <h4 className="text-xl font-semibold mb-4">How It Works</h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white/5 p-4 rounded-lg">
-                  <div className="font-bold text-xl mb-2">01</div>
-                  <p className="text-gray-400">Buy and hold $CBTC in your wallet</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-lg">
-                  <div className="font-bold text-xl mb-2">02</div>
-                  <p className="text-gray-400">Automatic reward calculation every day</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-lg">
-                  <div className="font-bold text-xl mb-2">03</div>
-                  <p className="text-gray-400">WBTC rewards sent directly to your wallet</p>
-                </div>
               </div>
             </div>
           </motion.div>
