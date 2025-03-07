@@ -91,7 +91,7 @@ const CommunitySection = () => {
           >
             <h3 className="text-2xl font-semibold mb-6">Subscribe to Our Newsletter</h3>
             <p className="text-gray-400 mb-6 max-w-lg mx-auto">
-              Get the latest updates on $CBTC rewards, token performance, and community announcements.
+              Get the latest updates on $CBTC rewards, project performance, and community announcements.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input 
