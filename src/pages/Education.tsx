@@ -1,12 +1,13 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Lightbulb, Book, Brain, Video, Bitcoin, Globe, Lock, ChartBar, Code } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { GraduationCap, Lightbulb, Book, Video, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BitcoinBasics from '../components/BitcoinBasics';
+import CryptoBestPractices from '../components/CryptoBestPractices';
+import EducationResourceCard from '../components/EducationResourceCard';
 
 // Animation variants
 const containerVariants = {
@@ -15,17 +16,6 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5
     }
   }
 };
@@ -41,7 +31,7 @@ const educationResources = [
     icon: <Lightbulb className="h-10 w-10 text-bitcoin" />,
     title: 'Crypto Best Practices',
     description: 'Learn essential security and usage guidelines for cryptocurrency.',
-    link: '#',
+    link: '#crypto-best-practices',
   },
   {
     icon: <Code className="h-10 w-10 text-bitcoin" />,
@@ -57,35 +47,17 @@ const educationResources = [
   },
 ];
 
-const bitcoinBasicsContent = [
-  {
-    icon: <Bitcoin className="h-8 w-8 text-bitcoin" />,
-    title: "What is Bitcoin?",
-    content: "Bitcoin is a decentralized digital currency introduced in 2009 by the pseudonymous creator, Satoshi Nakamoto. It was designed as a peer-to-peer payment system that operates without the need for a central authority."
-  },
-  {
-    icon: <Book className="h-8 w-8 text-bitcoin" />,
-    title: "History",
-    content: "Bitcoin emerged from a 2008 whitepaper, addressing the need for a secure, digital means of transferring value without intermediaries. Since its inception, it has grown from a niche project to a globally recognized digital asset."
-  },
-  {
-    icon: <Code className="h-8 w-8 text-bitcoin" />,
-    title: "Technology",
-    content: "At its core, Bitcoin uses blockchain technology—a distributed, immutable ledger that records every transaction. The network relies on a proof-of-work consensus mechanism, where miners validate transactions and secure the network in exchange for new bitcoins."
-  },
-  {
-    icon: <ChartBar className="h-8 w-8 text-bitcoin" />,
-    title: "Utility",
-    content: "Initially conceived as an alternative to traditional currencies, Bitcoin now functions as both a medium of exchange and a store of value. Its decentralized nature allows for borderless transactions and has positioned it as \"digital gold\" among investors, despite its price volatility."
-  },
-  {
-    icon: <Globe className="h-8 w-8 text-bitcoin" />,
-    title: "Current State in Society",
-    content: "Today, Bitcoin is widely traded on global exchanges and accepted by numerous businesses. It continues to attract both retail and institutional investors, even as it faces regulatory scrutiny and debates over its environmental impact due to energy-intensive mining practices. Its evolution has also spurred broader innovations in the cryptocurrency and blockchain sectors."
-  }
-];
-
 const Education = () => {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
+  const scrollToSection = (sectionId: string) => {
+    setActiveSection(sectionId);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-crypto-dark text-white overflow-x-hidden">
       <Header />
@@ -116,37 +88,13 @@ const Education = () => {
               animate="visible"
             >
               {educationResources.map((resource, index) => (
-                <motion.div key={index} variants={itemVariants}>
-                  <Card className="glass-card h-full border-none">
-                    <CardHeader className="text-center pt-8">
-                      <div className="mx-auto mb-4">
-                        {resource.icon}
-                      </div>
-                      <CardTitle className="text-xl font-bold">{resource.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-gray-400 text-center">
-                        {resource.description}
-                      </CardDescription>
-                    </CardContent>
-                    <CardFooter className="flex justify-center pb-8">
-                      <Button 
-                        variant="outline" 
-                        className="border-bitcoin hover:bg-bitcoin hover:text-white transition-colors"
-                        onClick={() => {
-                          if (resource.link.startsWith('#')) {
-                            const element = document.querySelector(resource.link);
-                            if (element) {
-                              element.scrollIntoView({ behavior: 'smooth' });
-                            }
-                          }
-                        }}
-                      >
-                        Learn More
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                </motion.div>
+                <EducationResourceCard 
+                  key={index}
+                  icon={resource.icon}
+                  title={resource.title}
+                  description={resource.description}
+                  link={resource.link}
+                />
               ))}
             </motion.div>
 
@@ -158,37 +106,18 @@ const Education = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-24 max-w-4xl mx-auto"
             >
-              <div className="glass-card p-8 rounded-lg border-none">
-                <div className="flex items-center justify-center gap-3 mb-8">
-                  <Bitcoin className="h-12 w-12 text-bitcoin" />
-                  <h2 className="text-3xl font-bold">Bitcoin Basics</h2>
-                </div>
-                
-                <Accordion type="single" collapsible className="w-full" defaultValue="item-0">
-                  {bitcoinBasicsContent.map((item, index) => (
-                    <AccordionItem key={index} value={`item-${index}`} className="border-b border-white/10">
-                      <AccordionTrigger className="text-lg font-medium hover:text-bitcoin py-4">
-                        <div className="flex items-center gap-3">
-                          {item.icon}
-                          <span>{item.title}</span>
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent className="text-gray-300 py-4 px-4 bg-white/5 rounded-md">
-                        <p className="leading-relaxed">{item.content}</p>
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
+              <BitcoinBasics />
+            </motion.div>
 
-                <div className="mt-8 text-center">
-                  <p className="text-gray-400 mb-6">
-                    Want to learn more about Bitcoin and cryptocurrency?
-                  </p>
-                  <Button className="bg-bitcoin hover:bg-bitcoin/80 text-white">
-                    Download Bitcoin Whitepaper
-                  </Button>
-                </div>
-              </div>
+            {/* Crypto Best Practices Section */}
+            <motion.div
+              id="crypto-best-practices"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="mt-24 max-w-4xl mx-auto"
+            >
+              <CryptoBestPractices />
             </motion.div>
 
             <motion.div 
