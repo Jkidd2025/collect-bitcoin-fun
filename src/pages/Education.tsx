@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Lightbulb, Book, Code, FileCode } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -51,6 +51,11 @@ const educationResources = [
 
 const Education = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+
+  // Scroll to the top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
