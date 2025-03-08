@@ -17,7 +17,7 @@ const FlowChartProcess = () => {
     },
     {
       icon: <Coins className="w-12 h-12 text-green-500" />,
-      title: "03. WBTC Rewards",
+      title: "03. Rewards",
       description: "WBTC rewards sent directly to your wallet"
     }
   ];
