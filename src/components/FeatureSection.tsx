@@ -86,7 +86,7 @@ const FeatureSection = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            $CBTC simplifies crypto rewards with innovative token mechanics that benefit all holders.
+            $CBTC simplifies crypto rewards with a smart contract designed to distribute WBTC proportionally to holders, subject to market conditions
           </motion.p>
         </div>
         
