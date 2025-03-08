@@ -100,7 +100,7 @@ const Header = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <Button className="btn-primary">
-              Get $CBTC
+              $CBTC
             </Button>
           </motion.div>
         </nav>
@@ -153,7 +153,7 @@ const Header = () => {
               </div>
             ))}
             <Button className="btn-primary w-full">
-              Get $CBTC
+              $CBTC
             </Button>
           </div>
         </motion.div>
