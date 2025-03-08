@@ -13,7 +13,7 @@ const FlowChartProcess = () => {
     {
       icon: <Circle className="w-12 h-12 text-accent" />,
       title: "02. Smart Contract",
-      description: "Automatic reward calculation"
+      description: "Automatic reward calculation, if conditions allow—rewards not guaranteed."
     },
     {
       icon: <Coins className="w-12 h-12 text-green-500" />,
