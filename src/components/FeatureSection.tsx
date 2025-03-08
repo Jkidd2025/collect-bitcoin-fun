@@ -86,7 +86,7 @@ const FeatureSection = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            $CBTC simplifies crypto rewards with a smart contract designed to distribute WBTC proportionally to holders, subject to market conditions
+            $CBTC is a Solana-based smart contract designed for community engagement, offering an experimental way to interact with the blockchain. It is not an investment or security.
           </motion.p>
         </div>
         
