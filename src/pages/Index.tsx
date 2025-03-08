@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import FeatureSection from '../components/FeatureSection';
-import TokenomicsSection from '../components/TokenomicsSection';
 import RewardsCounter from '../components/RewardsCounter';
 import RoadMapSection from '../components/RoadMapSection';
 import CommunitySection from '../components/CommunitySection';
@@ -50,7 +49,6 @@ const Index = () => {
           <main>
             <HeroSection />
             <FeatureSection />
-            <TokenomicsSection />
             <RewardsCounter />
             <RoadMapSection />
             <CommunitySection />
