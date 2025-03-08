@@ -55,7 +55,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <p className="text-gray-400 mb-4">
-              Collect Bitcoin ($CBTC) is the first memecoin on Solana that rewards holders with WBTC.
+              Collect Bitcoin ($CBTC) is a smart contract on Solana that rewards holders with WBTC. WBTC rewards depend on market conditions and may decrease.
             </p>
             <div className="flex space-x-3">
               <a href="https://x.com/cbtconsol?s=21" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
