@@ -46,7 +46,7 @@ const RoadMapSection = () => {
         >
           <h2 className="heading-lg mb-4">Our <span className="text-bitcoin">Road Map</span></h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            The journey of Collect Bitcoin from conception to a thriving ecosystem
+            A growing ecosystem we aim to develop through partnerships and features.
           </p>
         </motion.div>
         
