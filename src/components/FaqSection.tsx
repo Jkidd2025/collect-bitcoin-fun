@@ -64,7 +64,7 @@ const FaqSection = () => {
     },
     {
       question: "Is $CBTC safe and has the contract been audited?",
-      answer: "Yes, the $CBTC smart contract has been scanned using Solan-based auditing tools. The contract code is transparent and available for review in our public GitHub."
+      answer: "The $CBTC smart contract is experimental. An audit is pending. Use at your own risk."
     }
   ];
 
