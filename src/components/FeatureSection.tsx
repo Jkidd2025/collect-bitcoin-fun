@@ -49,7 +49,7 @@ const FeatureSection = () => {
     {
       icon: <Trophy className="w-6 h-6 text-bitcoin" />,
       title: "SPL Rewards Smart Contract",
-      description: "No additional steps are required to be rewarded with WBTC."
+      description: "No extra steps needed to potentially receive WBTC, subject to market conditions."
     }
   ];
 
