@@ -9,14 +9,22 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Define quick links with updated education path
+  // Function to scroll to a specific section
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // Define quick links with updated approach
   const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Features', href: '/#features' },
-    { name: 'Rewards', href: '/#rewards' },
-    { name: 'Education', href: '/education' },
-    { name: 'Community', href: '/#community' },
-    { name: 'FAQ', href: '/#faq' }
+    { name: 'Home', action: scrollToTop },
+    { name: 'Features', sectionId: 'features' },
+    { name: 'Rewards', sectionId: 'rewards' },
+    { name: 'Education', path: '/education' },
+    { name: 'Community', sectionId: 'community' },
+    { name: 'FAQ', sectionId: 'faq' }
   ];
 
   return (
@@ -75,28 +83,27 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  {link.name === 'Home' ? (
+                  {link.path ? (
                     <Link 
-                      to={link.href}
+                      to={link.path}
                       className="hover:text-bitcoin transition-colors"
-                      onClick={scrollToTop}
                     >
                       {link.name}
                     </Link>
-                  ) : link.href.startsWith('/#') ? (
-                    <a 
-                      href={link.href}
-                      className="hover:text-bitcoin transition-colors"
+                  ) : link.sectionId ? (
+                    <button 
+                      onClick={() => scrollToSection(link.sectionId)}
+                      className="hover:text-bitcoin transition-colors bg-transparent border-none p-0 text-gray-400 text-left cursor-pointer"
                     >
                       {link.name}
-                    </a>
+                    </button>
                   ) : (
-                    <Link 
-                      to={link.href}
-                      className="hover:text-bitcoin transition-colors"
+                    <button 
+                      onClick={link.action}
+                      className="hover:text-bitcoin transition-colors bg-transparent border-none p-0 text-gray-400 text-left cursor-pointer"
                     >
                       {link.name}
-                    </Link>
+                    </button>
                   )}
                 </li>
               ))}
@@ -106,7 +113,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Important</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/#roadmap" className="hover:text-bitcoin transition-colors">Road Map</a></li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('roadmap')} 
+                  className="hover:text-bitcoin transition-colors bg-transparent border-none p-0 text-gray-400 text-left cursor-pointer"
+                >
+                  Road Map
+                </button>
+              </li>
               <li><Link to="/education" className="hover:text-bitcoin transition-colors">Education Center</Link></li>
               <li><a href="https://solscan.io/token/CBTCVYcZWGeBSN3bolkXthwHxnKHMXGmz6FycsPDYRw" className="hover:text-bitcoin transition-colors">Contract Address</a></li>
               <li><Link to="/privacy-policy" className="hover:text-bitcoin transition-colors">Privacy Policy</Link></li>

@@ -26,13 +26,22 @@ const Header = () => {
     if (isMobileMenuOpen) setIsMobileMenuOpen(false);
   };
 
-  // Navigation items with updated education link
+  // Function to scroll to a specific section
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      if (isMobileMenuOpen) setIsMobileMenuOpen(false);
+    }
+  };
+
+  // Navigation items
   const navItems = [
-    { name: 'Features', path: '/#features' },
-    { name: 'Rewards', path: '/#rewards' },
+    { name: 'Features', id: 'features' },
+    { name: 'Rewards', id: 'rewards' },
     { name: 'Education', path: '/education' },
-    { name: 'Community', path: '/#community' },
-    { name: 'FAQ', path: '/#faq' }
+    { name: 'Community', id: 'community' },
+    { name: 'FAQ', id: 'faq' }
   ];
 
   return (
@@ -68,7 +77,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 * i }}
             >
-              {item.path.startsWith('/') ? (
+              {item.path ? (
                 <Link 
                   to={item.path}
                   className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
@@ -76,12 +85,12 @@ const Header = () => {
                   {item.name}
                 </Link>
               ) : (
-                <a 
-                  href={item.path}
+                <button 
+                  onClick={() => scrollToSection(item.id)}
                   className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
                 >
                   {item.name}
-                </a>
+                </button>
               )}
             </motion.div>
           ))}
@@ -125,7 +134,7 @@ const Header = () => {
             </Link>
             {navItems.map((item) => (
               <div key={item.name}>
-                {item.path.startsWith('/') ? (
+                {item.path ? (
                   <Link 
                     to={item.path}
                     className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
@@ -134,13 +143,12 @@ const Header = () => {
                     {item.name}
                   </Link>
                 ) : (
-                  <a
-                    href={item.path}
-                    className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                  <button
+                    className="text-lg font-medium text-gray-300 hover:text-white transition-colors w-full text-left"
+                    onClick={() => scrollToSection(item.id)}
                   >
                     {item.name}
-                  </a>
+                  </button>
                 )}
               </div>
             ))}
