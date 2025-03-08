@@ -26,7 +26,7 @@ const roadmapSteps = [
   {
     title: "Eco-System",
     icon: <TreeDeciduous className="h-8 w-8 text-bitcoin" />,
-    description: "Expanding $CBTC utility through partnerships, additional features, and sustainable growth initiatives.",
+    description: "Exploring $CBTC uses via partnerships and features, as feasible.",
     completed: false
   }
 ];
