@@ -33,7 +33,7 @@ const FeatureSection = () => {
   const features = [
     {
       icon: <Clock className="w-6 h-6 text-bitcoin" />,
-      title: "WBTC Rewards",
+      title: "Rewards",
       description: "Our smart contract automates the rewards process by converting SOL into $CBTC. Once the conversion occurs, holders are rewarded for interacting with the smart contract by receiving WBTC."
     },
     {
