@@ -105,7 +105,7 @@ const TokenomicsContent = () => {
           </ul>
         </div>
         
-        <h3 className="text-xl font-semibold mb-4">$CBTC Token Distribution</h3>
+        <h3 className="text-xl font-semibold mb-4">Tokenomics Token Distribution</h3>
         <p className="text-gray-300 mb-6">
           Total Supply: 1,000,000,000 $CBTC tokens
         </p>
