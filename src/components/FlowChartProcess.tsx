@@ -95,7 +95,7 @@ const FlowChartProcess = () => {
             <p className="text-gray-300 text-center">Automatic rewards distribution</p>
           </div>
           <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">Real Bitcoin (WBTC) rewards</p>
+            <p className="text-gray-300 text-center">Real Bitcoin (WBTC) rewards WBTC rewards depend on market conditions and may decrease.</p>
           </div>
         </div>
       </motion.div>
