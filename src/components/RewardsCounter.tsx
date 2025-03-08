@@ -62,7 +62,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            WBTC rewards are distributed to all $CBTC holders proportionally to their holdings and hold time.
+            Simply swap and hold $CBTC tokens in your wallet. The rewards system automatically calculates and distributes WBTC proportionally to all holders.
           </motion.p>
         </div>
         
