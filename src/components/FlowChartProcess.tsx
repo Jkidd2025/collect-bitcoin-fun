@@ -18,7 +18,7 @@ const FlowChartProcess = () => {
     {
       icon: <Coins className="w-12 h-12 text-green-500" />,
       title: "03. Rewards",
-      description: "WBTC rewards sent directly to your wallet"
+      description: "Rewards sent directly to your wallet"
     }
   ];
 
@@ -95,7 +95,7 @@ const FlowChartProcess = () => {
             <p className="text-gray-300 text-center">Rewards distribution</p>
           </div>
           <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">WBTC rewards depend on market conditions and may decrease.</p>
+            <p className="text-gray-300 text-center">Rewards depend on market conditions and may decrease.</p>
           </div>
         </div>
       </motion.div>
