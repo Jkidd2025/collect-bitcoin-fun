@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Wallet, Lock, Trophy } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import FlowChartProcess from './FlowChartProcess';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -109,20 +110,7 @@ const FeatureSection = () => {
           className="mt-10 max-w-5xl mx-auto"
         >
           <h4 className="text-xl font-semibold mb-6 text-center">How It Works</h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/5 p-4 rounded-lg">
-              <div className="font-bold text-xl mb-2">01</div>
-              <p className="text-gray-400">Swap and hold $CBTC in your wallet</p>
-            </div>
-            <div className="bg-white/5 p-4 rounded-lg">
-              <div className="font-bold text-xl mb-2">02</div>
-              <p className="text-gray-400">Automatic reward calculation</p>
-            </div>
-            <div className="bg-white/5 p-4 rounded-lg">
-              <div className="font-bold text-xl mb-2">03</div>
-              <p className="text-gray-400">WBTC rewards sent directly to your wallet</p>
-            </div>
-          </div>
+          <FlowChartProcess />
         </motion.div>
       </div>
     </section>
