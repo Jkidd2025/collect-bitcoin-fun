@@ -63,7 +63,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <p className="text-gray-400 mb-4">
-              Collect Bitcoin ($CBTC) is a smart contract on Solana that rewards holders with WBTC. WBTC rewards depend on market conditions and may decrease.
+              Collect Bitcoin ($CBTC) is a smart contract on Solana that rewards holders with WBTC. Cryptocurrency investments, including $CBTC, carry high risks. You may lose all or part of your investment due to market volatility, technical issues, or other factors. Rewards are not guaranteed and depend on market conditions.
             </p>
             <div className="flex space-x-3">
               <a href="https://x.com/cbtconsol?s=21" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
