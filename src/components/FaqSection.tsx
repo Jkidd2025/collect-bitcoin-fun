@@ -145,11 +145,6 @@ const FaqSection = () => {
           <p className="text-amber-500 font-bold mt-4 py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">
             CRYPTO EXPERIMENT: NO GUARANTEES, HIGH RISK
           </p>
-          
-          <div className="mt-4 p-4 bg-white/5 border border-white/10 rounded-lg">
-            <p className="text-white font-semibold">Important Notice:</p>
-            <p className="text-gray-400">Code is unaudited but tested internally—full audit in progress.</p>
-          </div>
         </motion.div>
       </div>
     </section>
