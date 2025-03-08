@@ -92,7 +92,7 @@ const FlowChartProcess = () => {
             <p className="text-gray-300 text-center">No staking required - keep tokens in your wallet</p>
           </div>
           <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">Automated rewards distribution based on Solana Blockchain</p>
+            <p className="text-gray-300 text-center">Rewards distribution</p>
           </div>
           <div className="p-4 bg-white/5 rounded-lg">
             <p className="text-gray-300 text-center">WBTC rewards depend on market conditions and may decrease.</p>
