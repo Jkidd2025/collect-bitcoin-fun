@@ -90,7 +90,7 @@ const HeroSection = () => {
             <br /> Rewards with WBTC
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            A Solana Smart Contract that rewards users for interacting with the Solana Blockchain. No staking, no complications - pure rewards
+            A Solana Smart Contract that rewards users for interacting with the Solana Blockchain. No staking, no complications
           </p>
         </motion.div>
 
