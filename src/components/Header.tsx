@@ -38,7 +38,7 @@ const Header = () => {
   // Navigation items
   const navItems = [
     { name: 'Features', id: 'features' },
-    { name: 'Rewards', id: 'rewards' },
+    { name: 'Potential Rewards', id: 'rewards' },
     { name: 'Education', path: '/education' },
     { name: 'Community', id: 'community' },
     { name: 'FAQ', id: 'faq' }

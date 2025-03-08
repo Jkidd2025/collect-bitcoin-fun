@@ -33,7 +33,7 @@ const FeatureSection = () => {
   const features = [
     {
       icon: <Clock className="w-6 h-6 text-bitcoin" />,
-      title: "Rewards",
+      title: "Potential Rewards",
       description: "The smart contract may distribute WBTC to holders by converting SOL, subject to market conditions. Rewards are not guaranteed and may decrease or stop entirely."
     },
     {
