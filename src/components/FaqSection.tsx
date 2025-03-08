@@ -141,6 +141,10 @@ const FaqSection = () => {
             Still have questions? Reach out to our community on 
             <a href="#" className="text-bitcoin hover:underline ml-1">Telegram</a>.
           </p>
+          
+          <p className="text-amber-500 font-semibold mt-4 py-2 px-4 bg-amber-500/10 rounded-lg inline-block">
+            Crypto Experiment: No Guarantees, High Risk
+          </p>
         </motion.div>
       </div>
     </section>
