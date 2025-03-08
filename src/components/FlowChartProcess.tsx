@@ -78,40 +78,18 @@ const FlowChartProcess = () => {
         </div>
       </div>
 
-      {/* Key benefits */}
+      {/* Important Notice */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        transition={{ duration: 0.5, delay: 0.9 }}
         viewport={{ once: true }}
         className="mt-12 glass-card p-6 border-t-2 border-bitcoin"
       >
-        <h3 className="text-xl font-semibold mb-4 text-center">Key Benefits</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">No staking required - keep tokens in your wallet</p>
-          </div>
-          <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">Rewards distribution</p>
-          </div>
-          <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">$CBTC = WBTC</p>
-          </div>
-        </div>
-        
-        {/* Important Notice */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.9 }}
-          viewport={{ once: true }}
-          className="mt-6 p-4 bg-bitcoin/10 border border-bitcoin/20 rounded-lg"
-        >
-          <h4 className="text-lg font-semibold mb-2 text-center text-bitcoin">Important Notice:</h4>
-          <p className="text-gray-300 text-center">
-            Cryptocurrency carries high risks, including total loss of value. $CBTC is an experimental project, not a financial product. Rewards depend on market performance and are not assured.
-          </p>
-        </motion.div>
+        <h4 className="text-lg font-semibold mb-2 text-center text-bitcoin">Important Notice:</h4>
+        <p className="text-gray-300 text-center">
+          Cryptocurrency carries high risks, including total loss of value. $CBTC is an experimental project, not a financial product. Rewards depend on market performance and are not assured.
+        </p>
       </motion.div>
     </div>
   );
