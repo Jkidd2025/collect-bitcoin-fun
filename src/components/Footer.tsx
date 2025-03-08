@@ -32,7 +32,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 mb-6 md:mb-0"
           >
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2" onClick={scrollToTop}>
               <Bitcoin className="h-8 w-8 text-bitcoin" />
               <span className="text-xl font-bold tracking-tight">Collect<span className="text-bitcoin">Bitcoin</span></span>
             </Link>
@@ -75,7 +75,15 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  {link.href.startsWith('/#') ? (
+                  {link.name === 'Home' ? (
+                    <Link 
+                      to={link.href}
+                      className="hover:text-bitcoin transition-colors"
+                      onClick={scrollToTop}
+                    >
+                      {link.name}
+                    </Link>
+                  ) : link.href.startsWith('/#') ? (
                     <a 
                       href={link.href}
                       className="hover:text-bitcoin transition-colors"

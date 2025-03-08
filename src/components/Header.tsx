@@ -19,6 +19,12 @@ const Header = () => {
   }, []);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  
+  // Function to scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (isMobileMenuOpen) setIsMobileMenuOpen(false);
+  };
 
   // Navigation items with updated education link
   const navItems = [
@@ -44,7 +50,7 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2" onClick={scrollToTop}>
             <Bitcoin className="h-8 w-8 text-bitcoin" />
             <span className="text-xl font-bold tracking-tight">Collect<span className="text-bitcoin">Bitcoin</span></span>
           </Link>
@@ -52,7 +58,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 items-center">
-          <Link to="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+          <Link to="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors" onClick={scrollToTop}>
             Home
           </Link>
           {navItems.map((item, i) => (
@@ -113,7 +119,7 @@ const Header = () => {
             <Link 
               to="/"
               className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={scrollToTop}
             >
               Home
             </Link>
