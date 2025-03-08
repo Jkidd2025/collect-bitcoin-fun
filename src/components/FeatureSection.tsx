@@ -42,7 +42,7 @@ const FeatureSection = () => {
     },
     {
       icon: <Lock className="w-6 h-6 text-bitcoin" />,
-      title: "Time-Based Reward Allocation",
+      title: "Loyalty Based Rewards Allocation",
       description: "The longer you hold, the more rewards you receive. Diamond hands are rewarded with bigger allocations."
     },
     {
