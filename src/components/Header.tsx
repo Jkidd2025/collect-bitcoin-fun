@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Bitcoin } from 'lucide-react';
@@ -38,7 +37,7 @@ const Header = () => {
   // Navigation items
   const navItems = [
     { name: 'Features', id: 'features' },
-    { name: 'Potential Rewards', id: 'rewards' },
+    { name: 'Rewards', id: 'rewards' },
     { name: 'Education', path: '/education' },
     { name: 'Community', id: 'community' },
     { name: 'FAQ', id: 'faq' }
