@@ -97,7 +97,7 @@ const RewardsCounter = () => {
                   <div className="absolute inset-0 rounded-full border-4 border-bitcoin border-t-transparent animate-rotate"></div>
                 </div>
                 <h3 className="text-2xl font-semibold mb-1">Reward Cycles</h3>
-                <p className="text-gray-400">New rewards every day</p>
+                <p className="text-gray-400">Potential new rewards daily, depending on market conditions—not guaranteed</p>
               </div>
             </div>
           </motion.div>
