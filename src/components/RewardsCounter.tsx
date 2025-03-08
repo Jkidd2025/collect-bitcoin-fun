@@ -42,7 +42,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="px-4 py-1 bg-white/5 border border-white/10 rounded-full text-sm font-medium text-white/80 inline-block mb-4"
           >
-            POTENTIAL REWARDS SYSTEM
+            REWARDS SYSTEM
           </motion.span>
           
           <motion.h2 
