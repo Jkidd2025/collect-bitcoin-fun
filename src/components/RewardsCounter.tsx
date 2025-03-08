@@ -62,7 +62,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            The rewards system automatically calculates and distributes WBTC proportionally to all holders.
+            The rewards system automatically calculates and distributes WBTC proportionally to all holders. WBTC rewards depend on market conditions and may decrease.
           </motion.p>
         </div>
         
