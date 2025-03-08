@@ -111,6 +111,15 @@ const FeatureSection = () => {
         >
           <h4 className="text-xl font-semibold mb-6 text-center">How It Works</h4>
           <FlowChartProcess />
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            viewport={{ once: true }}
+            className="text-amber-500 text-center mt-6 text-sm font-medium"
+          >
+            Rewards are not guaranteed and vary with market conditions; $CBTC value may drop
+          </motion.p>
         </motion.div>
       </div>
     </section>
