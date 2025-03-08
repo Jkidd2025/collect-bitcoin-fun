@@ -100,9 +100,6 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 mt-8"
         >
-          <Button className="btn-primary">
-            Get $CBTC
-          </Button>
           <Button variant="outline" className="btn-secondary" onClick={scrollToRoadmap}>
             Road Map
           </Button>
