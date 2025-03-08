@@ -1,20 +1,20 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Flag, Rocket, TreeDeciduous, TrendingUp, Map } from 'lucide-react';
+import { Flag, Rocket, TreeDeciduous, TrendingUp, Map, Code } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const roadmapSteps = [
   {
-    title: "Marketing",
-    icon: <Flag className="h-8 w-8 text-bitcoin" />,
-    description: "Building community awareness through social media campaigns, partnerships, and strategic outreach to crypto influencers.",
+    title: "Design and Development",
+    icon: <Code className="h-8 w-8 text-bitcoin" />,
+    description: "Creating the smart contract architecture and building the user interface to ensure a seamless and secure experience for users.",
     completed: true
   },
   {
-    title: "Presale",
-    icon: <Map className="h-8 w-8 text-bitcoin" />,
-    description: "Initial token offering to early supporters with exclusive benefits and incentives for early adopters.",
+    title: "Marketing",
+    icon: <Flag className="h-8 w-8 text-bitcoin" />,
+    description: "Building community awareness through social media campaigns, partnerships, and strategic outreach to crypto influencers.",
     completed: true
   },
   {
