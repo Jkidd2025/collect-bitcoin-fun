@@ -18,7 +18,7 @@ const FlowChartProcess = () => {
     {
       icon: <Coins className="w-12 h-12 text-green-500" />,
       title: "03. Rewards",
-      description: "Rewards sent directly to your wallet"
+      description: "Rewards, if any, are sent to your wallet depending on market performance."
     }
   ];
 
