@@ -8,7 +8,7 @@ const FlowChartProcess = () => {
     {
       icon: <Wallet className="w-12 h-12 text-bitcoin" />,
       title: "01. Solana Defi Wallet",
-      description: "Swap and hold $CBTC in your wallet"
+      description: "Load up on some $CBTC in your favorite Solana Defi Wallet"
     },
     {
       icon: <Circle className="w-12 h-12 text-accent" />,
