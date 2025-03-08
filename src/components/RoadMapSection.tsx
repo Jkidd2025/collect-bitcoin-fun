@@ -46,7 +46,7 @@ const RoadMapSection = () => {
         >
           <h2 className="heading-lg mb-4">Our <span className="text-bitcoin">Road Map</span></h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            A growing ecosystem we aim to develop through partnerships and features.
+            Our goal: Build a practical ecosystem through partnerships and features as $CBTC evolves.
           </p>
         </motion.div>
         
