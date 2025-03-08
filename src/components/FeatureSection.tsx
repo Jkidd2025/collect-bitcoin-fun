@@ -39,7 +39,7 @@ const FeatureSection = () => {
     {
       icon: <Wallet className="w-6 h-6 text-bitcoin" />,
       title: "No Staking Required",
-      description: "Keep your tokens in your own wallet. No need to lock them up or use complicated staking platforms."
+      description: "Keep your tokens in your wallet—no locking or staking needed. Participation is at your own risk."
     },
     {
       icon: <Lock className="w-6 h-6 text-bitcoin" />,
