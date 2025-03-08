@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Wallet, Lock, Trophy, Percent } from 'lucide-react';
@@ -101,7 +100,6 @@ const FeatureSection = () => {
           ))}
         </div>
         
-        {/* Solana Blockchain Service Fee Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -139,13 +137,12 @@ const FeatureSection = () => {
             <div className="flex items-center justify-center">
               <div className="text-center max-w-xl">
                 <h4 className="text-lg font-semibold mb-3">Collection & Conversion Process</h4>
-                <p className="text-gray-400">All fees are directed to a dedicated collection account and periodically converted to WBTC (Wrapped Bitcoin) before distribution.</p>
+                <p className="text-gray-400">All fees are directed to a dedicated collection account and periodically converted to WBTC (Wrapped Bitcoin) before distribution. WBTC rewards depend on market conditions and may decrease.</p>
               </div>
             </div>
           </div>
         </motion.div>
         
-        {/* How It Works Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
