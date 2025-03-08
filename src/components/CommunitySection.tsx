@@ -59,7 +59,7 @@ const CommunitySection = () => {
             viewport={{ once: true }}
             className="text-gray-300 mb-12 max-w-2xl mx-auto"
           >
-            Be part of the $CBTC revolution. Connect with like-minded enthusiasts and stay updated on the latest developments.
+            Join the $CBTC experiment—connect with our community to explore this project.
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
