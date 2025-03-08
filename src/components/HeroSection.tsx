@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Bitcoin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -25,10 +24,6 @@ const HeroSection = () => {
 
   const scrollToFeatures = () => {
     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const scrollToRoadmap = () => {
-    document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -92,17 +87,6 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             A Solana Smart Contract that rewards users for interacting with the Solana Blockchain. No staking, no complications
           </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 mt-8"
-        >
-          <Button variant="outline" className="btn-secondary" onClick={scrollToRoadmap}>
-            Road Map
-          </Button>
         </motion.div>
 
         <motion.div
