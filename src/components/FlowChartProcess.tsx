@@ -95,7 +95,7 @@ const FlowChartProcess = () => {
             <p className="text-gray-300 text-center">Rewards distribution</p>
           </div>
           <div className="p-4 bg-white/5 rounded-lg">
-            <p className="text-gray-300 text-center">Rewards depend on market conditions and may decrease.</p>
+            <p className="text-gray-300 text-center">$CBTC = WBTC</p>
           </div>
         </div>
         
