@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Wallet, Lock, Trophy, Percent } from 'lucide-react';
@@ -32,7 +33,7 @@ const FeatureSection = () => {
     {
       icon: <Clock className="w-6 h-6 text-bitcoin" />,
       title: "WBTC Rewards",
-      description: "Automatically receive WBTC rewards directly to your wallet, just for holding $CBTC tokens."
+      description: "Our smart contract automates the rewards process by converting SOL into $CBTC. Once the conversion occurs, holders are rewarded for interacting with the smart contract by receiving WBTC."
     },
     {
       icon: <Wallet className="w-6 h-6 text-bitcoin" />,
