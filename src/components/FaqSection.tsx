@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -51,7 +52,7 @@ const FaqSection = () => {
     },
     {
       question: "Is there a minimum amount of $CBTC required to earn rewards?",
-      answer: "No, there is no minimum amount required. All holders receive rewards proportionally, regardless of how much $CBTC. However, larger holdings will naturally receive larger rewards."
+      answer: "No minimum, but rewards scale with holdings and market performance."
     },
     {
       question: "How are the WBTC rewards funded?",
