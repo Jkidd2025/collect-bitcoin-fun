@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -56,7 +55,7 @@ const FaqSection = () => {
     },
     {
       question: "How are the WBTC rewards funded?",
-      answer: "A portion of each service fee is allocated to the WBTC rewards pool. This creates a sustainable reward mechanism that benefits all holders while encouraging long-term holding."
+      answer: "A portion of the Solana network fee is allocated to the WBTC rewards pool. This creates a sustainable reward mechanism that benefits all holders while encouraging loyalty."
     },
     {
       question: "Where can I swap for $CBTC?",
