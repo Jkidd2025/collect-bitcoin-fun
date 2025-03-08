@@ -98,6 +98,20 @@ const FlowChartProcess = () => {
             <p className="text-gray-300 text-center">Rewards depend on market conditions and may decrease.</p>
           </div>
         </div>
+        
+        {/* Important Notice */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          viewport={{ once: true }}
+          className="mt-6 p-4 bg-bitcoin/10 border border-bitcoin/20 rounded-lg"
+        >
+          <h4 className="text-lg font-semibold mb-2 text-center text-bitcoin">Important Notice:</h4>
+          <p className="text-gray-300 text-center">
+            Cryptocurrency carries high risks, including total loss of value. $CBTC is an experimental project, not a financial product. Rewards depend on market performance and are not assured.
+          </p>
+        </motion.div>
       </motion.div>
     </div>
   );
