@@ -44,7 +44,7 @@ const FaqSection = () => {
   const faqs = [
     {
       question: "What is Collect Bitcoin ($CBTC)?",
-      answer: "Collect Bitcoin ($CBTC) is a smart contract on the Solana blockchain that automatically rewards holders with WBTC (Wrapped Bitcoin). No staking or complicated processes required."
+      answer: "Collect Bitcoin ($CBTC) is a smart contract on the Solana blockchain that may distribute WBTC rewards based on market conditions WBTC (Wrapped Bitcoin). No staking or complicated processes are required."
     },
     {
       question: "How do I earn WBTC rewards?",
