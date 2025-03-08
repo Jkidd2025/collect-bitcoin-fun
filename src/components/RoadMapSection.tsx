@@ -46,7 +46,7 @@ const RoadMapSection = () => {
         >
           <h2 className="heading-lg mb-4">Our <span className="text-bitcoin">Road Map</span></h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Our goal: Enhance $CBTC with practical features and partnerships as the project develops.
+            Our goal: Add practical features and partnerships to $CBTC as it develops, step by step.
           </p>
         </motion.div>
         
