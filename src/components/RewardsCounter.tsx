@@ -62,7 +62,7 @@ const RewardsCounter = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            The rewards system automatically calculates and distributes rewards proportionally to all holders. Rewards depend on market conditions and may decrease.
+            The rewards system automatically calculates and distributes rewards proportionally to all holders. Cryptocurrency investments, including $CBTC, carry high risks. You may lose all or part of your investment due to market volatility, technical issues, or other factors. Rewards are not guaranteed and depend on market conditions.
           </motion.p>
         </div>
         
