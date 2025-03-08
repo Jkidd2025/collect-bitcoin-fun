@@ -84,7 +84,7 @@ const HeroSection = () => {
             <span className="text-gradient">Collect Bitcoin</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            A Solana Smart Contract that rewards users for interacting with the Solana Blockchain. No staking
+            A Solana Smart Contract that may reward users for holding $CBTC, based on market conditions. No staking. Experimental: Rewards not assured. Crypto is risky.
           </p>
         </motion.div>
 
