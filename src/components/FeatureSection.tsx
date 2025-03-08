@@ -86,7 +86,7 @@ const FeatureSection = () => {
             viewport={{ once: true }}
             className="text-gray-300 max-w-2xl mx-auto"
           >
-            $CBTC is a Solana-based smart contract designed for community engagement, offering an experimental way to interact with the blockchain. It is not an investment or security.
+            $CBTC is a Solana-based smart contract designed for community engagement and experimentation. It is not an investment or security. High Risk: Rewards and value may fluctuate or be lost entirely.
           </motion.p>
         </div>
         
