@@ -64,7 +64,7 @@ const FaqSection = () => {
     },
     {
       question: "Is $CBTC safe and has the contract been audited?",
-      answer: "Audit pending as of March 2025; targeting completion by Q2 2025, pending resources. $CBTC is experimental—use at your own risk."
+      answer: "Audit pending as of March 2025; targeting completion by Q2 2025, pending resources. $CBTC is experimental—use at your own risk. Important Notice: Code is unaudited but tested internally—full audit in progress."
     }
   ];
 
