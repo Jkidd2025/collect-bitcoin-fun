@@ -47,7 +47,7 @@ const FaqSection = () => {
     },
     {
       question: "How do I earn WBTC rewards?",
-      answer: "Simply swap and hold $CBTC tokens in your wallet. The rewards system automatically calculates and distributes WBTC to all holders proportionally. The longer you hold, the more rewards you receive."
+      answer: "Simply swap and hold $CBTC tokens in your wallet. The rewards system automatically calculates and distributes WBTC proportionally to all holders."
     },
     {
       question: "Is there a minimum amount of $CBTC required to earn rewards?",
@@ -63,7 +63,7 @@ const FaqSection = () => {
     },
     {
       question: "Is $CBTC safe and has the contract been audited?",
-      answer: "Yes, the $CBTC smart contract has undergone a comprehensive security audit by leading blockchain security firms. The contract code is transparent and available for review on our website."
+      answer: "Yes, the $CBTC smart contract has been scanned using Solan-based auditing tools. The contract code is transparent and available for review in our public GitHub."
     }
   ];
 
