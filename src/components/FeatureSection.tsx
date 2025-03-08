@@ -43,7 +43,7 @@ const FeatureSection = () => {
     {
       icon: <Lock className="w-6 h-6 text-bitcoin" />,
       title: "Loyalty Based Rewards Allocation",
-      description: "The longer you hold $CBTC, the more WBTC rewards you receive. WBTC rewards depend on market conditions and may decrease."
+      description: "As a loyal $CBTC holder, our smart contract will automatically add more WBTC rewards to your wallet. WBTC rewards depend on market conditions and may decrease."
     },
     {
       icon: <Trophy className="w-6 h-6 text-bitcoin" />,
