@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -138,8 +137,7 @@ const FaqSection = () => {
           className="text-center mt-12"
         >
           <p className="text-gray-400">
-            Still have questions? Reach out to our community on 
-            <a href="#" className="text-bitcoin hover:underline ml-1">Telegram</a>.
+            Still have questions? Check our social media for community updates.
           </p>
           
           <p className="text-amber-500 font-bold mt-4 py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">

@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Bitcoin, X, BarChart3, MessageCircle, ArrowUp } from 'lucide-react';
+import { Bitcoin, X, BarChart3, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -65,9 +66,6 @@ const Footer = () => {
             <div className="flex space-x-3">
               <a href="https://x.com/cbtconsol?s=21" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <X className="h-5 w-5 text-white" />
-              </a>
-              <a href="https://t.me/collect_btc_chat" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
-                <MessageCircle className="h-5 w-5 text-white" />
               </a>
               <a href="https://dexscreener.com/solana/cbtc" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <BarChart3 className="h-5 w-5 text-white" />

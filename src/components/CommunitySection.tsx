@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { X, BarChart3, MessageCircle } from 'lucide-react';
+import { X, BarChart3 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
@@ -10,12 +9,6 @@ const socialLinks = [
     icon: <X className="h-6 w-6" />,
     url: 'https://x.com/cbtconsol?s=21',
     color: 'bg-[#000000]/10 text-[#000000]'
-  },
-  {
-    name: 'Telegram',
-    icon: <MessageCircle className="h-6 w-6" />,
-    url: 'https://t.me/collect_btc_chat',
-    color: 'bg-[#0088cc]/10 text-[#0088cc]'
   },
   {
     name: 'Dex Screen',
