@@ -60,7 +60,7 @@ const FaqSection = () => {
     },
     {
       question: "Where can I swap for $CBTC?",
-      answer: "Currently, $CBTC is available on decentralized exchanges on the Solana network. Connect your wallet and swap SOL for $CBTC. Check our website for the official contract address."
+      answer: "Available on major Solana DEXes—check our site for links."
     },
     {
       question: "Is $CBTC safe and has the contract been audited?",
