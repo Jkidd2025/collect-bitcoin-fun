@@ -101,7 +101,7 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 mt-8"
         >
           <Button className="btn-primary">
-            Swap $CBTC
+            Get $CBTC
           </Button>
           <Button variant="outline" className="btn-secondary" onClick={scrollToRoadmap}>
             Road Map
