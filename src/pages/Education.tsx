@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Lightbulb, Book, Code, FileCode, Coins } from 'lucide-react';
@@ -12,7 +11,6 @@ import SmartContractsContent from '../components/SmartContractsContent';
 import TokenomicsContent from '../components/TokenomicsContent';
 import EducationResourceCard from '../components/EducationResourceCard';
 
-// Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -59,7 +57,6 @@ const educationResources = [
 const Education = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  // Scroll to the top when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -112,7 +109,6 @@ const Education = () => {
               ))}
             </motion.div>
 
-            {/* Bitcoin Basics Section */}
             <motion.div
               id="bitcoin-basics"
               initial={{ opacity: 0, y: 40 }}
@@ -123,7 +119,6 @@ const Education = () => {
               <BitcoinBasics />
             </motion.div>
 
-            {/* Crypto Best Practices Section */}
             <motion.div
               id="crypto-best-practices"
               initial={{ opacity: 0, y: 40 }}
@@ -134,7 +129,6 @@ const Education = () => {
               <CryptoBestPractices />
             </motion.div>
 
-            {/* Blockchains Section */}
             <motion.div
               id="blockchains"
               initial={{ opacity: 0, y: 40 }}
@@ -145,7 +139,6 @@ const Education = () => {
               <BlockchainsContent />
             </motion.div>
 
-            {/* Smart Contracts Section */}
             <motion.div
               id="smart-contracts"
               initial={{ opacity: 0, y: 40 }}
@@ -156,7 +149,6 @@ const Education = () => {
               <SmartContractsContent />
             </motion.div>
 
-            {/* Tokenomics Section */}
             <motion.div
               id="tokenomics"
               initial={{ opacity: 0, y: 40 }}
@@ -179,7 +171,7 @@ const Education = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Ready to become a crypto expert?</h3>
                 <p className="text-gray-400 mb-6">
-                  Join our weekly webinars and interactive learning sessions to deepen your understanding of blockchain technology and cryptocurrency investing.
+                  Join our news letter to deepen your understanding of blockchain technology, cryptocurrency investing, smart contracts, and more...
                 </p>
                 <Button className="btn-primary">
                   Join Education Program
