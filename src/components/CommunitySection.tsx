@@ -1,15 +1,10 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { X, BarChart3 } from 'lucide-react';
+import { BarChart3 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
-  {
-    name: 'X',
-    icon: <X className="h-6 w-6" />,
-    url: 'https://x.com/cbtconsol?s=21',
-    color: 'bg-[#000000]/10 text-[#000000]'
-  },
   {
     name: 'Dex Screen',
     icon: <BarChart3 className="h-6 w-6" />,
@@ -55,7 +50,7 @@ const CommunitySection = () => {
             Join the $CBTC experiment—connect with our community to explore this project.
           </motion.p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-12">
             {socialLinks.map((link, index) => (
               <motion.a
                 key={link.name}

@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Bitcoin, X, BarChart3, ArrowUp } from 'lucide-react';
+import { Bitcoin, BarChart3, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -64,9 +64,6 @@ const Footer = () => {
               Collect Bitcoin ($CBTC) is a smart contract on Solana that may reward holders with WBTC if market conditions permit. Cryptocurrency investments, including $CBTC, carry high risks. You may lose all or part of your investment due to market volatility, technical issues, or other factors. Rewards are not guaranteed and depend on market conditions. The smart contract's security depends on Solana's blockchain integrity and our code, which is audit pending as of March 2025; targeting completion by Q3 2025, pending resources. $CBTC is experimental—use at your own risk. Technical risks remain. <span className="font-semibold">Important Notice</span>: Code is unaudited but tested internally—full audit in progress.
             </p>
             <div className="flex space-x-3">
-              <a href="https://x.com/cbtconsol?s=21" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
-                <X className="h-5 w-5 text-white" />
-              </a>
               <a href="https://dexscreener.com/solana/cbtc" className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
                 <BarChart3 className="h-5 w-5 text-white" />
               </a>
