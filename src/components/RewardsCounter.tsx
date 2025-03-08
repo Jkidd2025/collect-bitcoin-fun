@@ -86,7 +86,6 @@ const RewardsCounter = () => {
                 </div>
                 <p className="text-gray-400 mt-3 flex items-center justify-center">
                   <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                  <span>Growing every day</span>
                 </p>
               </div>
               
