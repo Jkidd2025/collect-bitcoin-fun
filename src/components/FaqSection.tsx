@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -48,7 +47,7 @@ const FaqSection = () => {
     },
     {
       question: "How do I earn WBTC rewards?",
-      answer: "Simply swap and hold $CBTC tokens in your wallet. The rewards system automatically calculates and distributes WBTC proportionally to all holders."
+      answer: "Hold $CBTC in your wallet; rewards may occur if SOL conversion succeeds, but aren't guaranteed."
     },
     {
       question: "Is there a minimum amount of $CBTC required to earn rewards?",
