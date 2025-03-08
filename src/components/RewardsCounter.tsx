@@ -80,12 +80,13 @@ const RewardsCounter = () => {
                   <div className="w-20 h-20 bg-bitcoin/20 rounded-full blur-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
                   <Bitcoin className="w-16 h-16 text-bitcoin relative" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-2">Total Potential Rewards Distributed</h3>
+                <h3 className="text-2xl font-semibold mb-2">Total Rewards Distributed So Far</h3>
                 <div className="text-4xl md:text-5xl font-bold text-gradient">
-                  {totalRewards.toFixed(7)} <span className="text-sm font-normal text-gray-400">$CBTC</span>
+                  0.0000039 <span className="text-sm font-normal text-gray-400">$CBTC</span>
                 </div>
                 <p className="text-gray-400 mt-3 flex items-center justify-center">
                   <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
+                  <span className="text-sm">past distribution doesn't predict future results</span>
                 </p>
               </div>
               
