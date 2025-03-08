@@ -43,7 +43,7 @@ const FeatureSection = () => {
     {
       icon: <Lock className="w-6 h-6 text-bitcoin" />,
       title: "Loyalty Based Rewards Allocation",
-      description: "The longer you hold, the more rewards you receive. Diamond hands are rewarded with bigger allocations."
+      description: "The longer you hold $CBTC, the more WBTC rewards you receive. WBTC rewards depend on market conditions and may decrease."
     },
     {
       icon: <Trophy className="w-6 h-6 text-bitcoin" />,
