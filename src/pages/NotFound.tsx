@@ -60,6 +60,17 @@ const NotFound = () => {
             </a>
           </Button>
         </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.8 }}
+          className="mt-12"
+        >
+          <p className="text-amber-500 font-bold py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">
+            CRYPTO EXPERIMENT: NO GUARANTEES, HIGH RISK
+          </p>
+        </motion.div>
       </div>
     </div>
   );

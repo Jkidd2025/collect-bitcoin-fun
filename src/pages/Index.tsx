@@ -10,6 +10,7 @@ import RoadMapSection from '../components/RoadMapSection';
 import CommunitySection from '../components/CommunitySection';
 import FaqSection from '../components/FaqSection';
 import Footer from '../components/Footer';
+import WarningBanner from '../components/WarningBanner';
 
 const Index = () => {
   // Effect to handle fade-in sections based on scroll position
@@ -47,6 +48,9 @@ const Index = () => {
         >
           <Header />
           <main>
+            <div className="container mx-auto px-4 pt-32 text-center">
+              <WarningBanner />
+            </div>
             <HeroSection />
             <FeatureSection />
             <RewardsCounter />

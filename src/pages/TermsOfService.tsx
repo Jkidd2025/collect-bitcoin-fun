@@ -15,7 +15,19 @@ const TermsOfService = () => {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 py-16"
       >
-        <h1 className="text-3xl font-bold mb-8">Terms and Conditions</h1>
+        <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mb-8"
+        >
+          <p className="text-amber-500 font-bold py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">
+            CRYPTO EXPERIMENT: NO GUARANTEES, HIGH RISK
+          </p>
+        </motion.div>
+        
         <div className="prose prose-invert max-w-none">
           <h2 className="text-2xl font-semibold text-bitcoin">CBTC CARDS</h2>
           <p className="text-gray-400">Last Modified: March 6, 2025</p>
@@ -51,6 +63,17 @@ const TermsOfService = () => {
           <h2 className="text-xl font-semibold mt-8">Contact Us</h2>
           <p>If you have any questions about the Terms and Conditions or the practices of mycbtc.com, please feel free to e-mail us at: support@mycbtc.com.</p>
         </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-8 text-center"
+        >
+          <p className="text-amber-500 font-bold py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">
+            CRYPTO EXPERIMENT: NO GUARANTEES, HIGH RISK
+          </p>
+        </motion.div>
       </motion.div>
       
       <Footer />

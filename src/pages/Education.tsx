@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Lightbulb, Book, Code, FileCode, Coins } from 'lucide-react';
@@ -77,7 +78,7 @@ const Education = () => {
           <div className="absolute inset-0 grid-pattern opacity-10"></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-3xl mx-auto mb-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -88,6 +89,17 @@ const Education = () => {
                 </h1>
                 <p className="text-gray-400 text-lg">
                   Empowering our community with knowledge and resources to navigate the world of cryptocurrency confidently.
+                </p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mt-6"
+              >
+                <p className="text-amber-500 font-bold py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">
+                  CRYPTO EXPERIMENT: NO GUARANTEES, HIGH RISK
                 </p>
               </motion.div>
             </div>
@@ -176,6 +188,10 @@ const Education = () => {
                 <Button className="btn-primary">
                   Join Education Program
                 </Button>
+                
+                <p className="text-amber-500 font-bold mt-6 py-3 px-6 bg-amber-500/10 rounded-lg inline-block uppercase tracking-wider border border-amber-500/20">
+                  CRYPTO EXPERIMENT: NO GUARANTEES, HIGH RISK
+                </p>
               </div>
             </motion.div>
           </div>
