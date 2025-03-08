@@ -64,7 +64,7 @@ const FaqSection = () => {
     },
     {
       question: "Is $CBTC safe and has the contract been audited?",
-      answer: "The $CBTC smart contract is experimental. An audit is pending. Use at your own risk."
+      answer: "Audit pending. $CBTC is experimental; use at your own risk."
     }
   ];
 
