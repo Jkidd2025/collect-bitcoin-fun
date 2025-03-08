@@ -56,7 +56,7 @@ const FaqSection = () => {
     },
     {
       question: "How are the WBTC rewards funded?",
-      answer: "A portion of the Solana network fee is allocated to the WBTC rewards pool. This creates a sustainable reward mechanism that benefits all holders while encouraging loyalty."
+      answer: "Rewards come from SOL conversion within the smart contract, subject to availability and market risks."
     },
     {
       question: "Where can I swap for $CBTC?",
